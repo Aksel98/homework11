@@ -35,16 +35,18 @@ function submitData() {
         Array.from(inputs).forEach(v => {
             if (!invalidData.innerHTML) v.value = ''
         })
-        const div = document.createElement('div')
-        addDataElement(res.data.name, div)
-        addDataElement(res.data.age, div)
-        addDataElement(`${res.data.salary}֏`, div)
-        let employers = localStorage.getItem('employers')
-        const parentDiv = document.createElement("div")
-        parentDiv.appendChild(div)
-        employers += parentDiv.innerHTML
-        window.localStorage.setItem('employers', employers)
-        if (this.checkDataValidation.isValid) location.href = './index.html'
+        if (this.checkDataValidation.isValid) {
+            const div = document.createElement('div')
+            addDataElement(res.data.name, div)
+            addDataElement(res.data.age, div)
+            addDataElement(`${res.data.salary}֏`, div)
+            let employers = localStorage.getItem('employers')
+            const parentDiv = document.createElement("div")
+            parentDiv.appendChild(div)
+            employers += parentDiv.innerHTML
+            window.localStorage.setItem('employers', employers)
+            location.href = './index.html'
+        }
     })
 
     if (!this.checkDataValidation.isValid) {

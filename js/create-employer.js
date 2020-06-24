@@ -48,7 +48,7 @@ function submitData() {
     })
 
     if (!this.checkDataValidation.isValid) {
-        invalidData.innerHTML = "Username must'nt be longer than 10";
+        invalidData.innerHTML = "Username must'nt be longer than 10 symbols";
         invalidData.classList.add('error')
     }
 }

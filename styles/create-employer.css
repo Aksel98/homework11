@@ -4,6 +4,17 @@ body {
     background-color: #222A37;
 }
 
+.back-img-parent {
+    position: absolute;
+    margin: 20px 40px 0;
+    cursor: pointer;
+}
+
+.back-img {
+    width: 25px;
+    height: 25px;
+}
+
 .container {
     background-color: gray;
     max-width: 1440px;

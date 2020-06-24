@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/create-employer.css" rel="stylesheet">
+    <title>Create employer</title>
+</head>
+<body>
+<section class="container">
+    <div class="create-employer">
+        <div class="create-title">Add new employers</div>
+        <div id="data-form" oninput="getDataValues()" >
+            <div class="sub-add-data"><input placeholder="Name" data-validation="username"></div>
+            <div class="sub-add-data"><input type="number" placeholder="Age"></div>
+            <div class="sub-add-data"><input type="number" placeholder="Salary"></div>
+            <button onclick="submitData()" disabled id="add-employer"><a id="asd">Add employer</a></button>
+        </div>
+    </div>
+</section>
+<script src="js/create-employer.js"></script>
+</body>
+</html>

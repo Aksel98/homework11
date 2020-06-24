@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet">
+    <title>Employers</title>
+</head>
+<body>
+<header>Admin page</header>
+<section class="main">
+    <a class="listing-place-info" href="#employers-listing">
+        <button>See your employers</button>
+        <div class="img-parent"><img src="img/down-arrow-icon.png" width="30px" height="30px"></div>
+    </a>
+</section>
+<div class="featured-employers">Featured Employers</div>
+<section class="employers">
+    <div class="add-employer-parent">
+        <a class="add-employer" href="create-employer.html">Add new employer</a>
+    </div>
+    <div class="inner-data inner-data-titles">
+        <div>Name</div>
+        <div>Age</div>
+        <div>Salary</div>
+    </div>
+    <div id="employers-listing">
+        <div class="loader"><img src="img/loader.gif"></div>
+    </div>
+</section>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body {
+    margin: 0 auto;
+    font-family: sans-serif;
+    background-color: #222A37;
+}
+
+.container {
+    background-color: gray;
+    max-width: 1440px;
+    box-shadow: 0 5px 10px -5px black;
+    height: calc(100vh - 122px);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 60px;
+}
+
+.create-employer {
+    margin: 40px;
+}
+
+.create-title {
+    color: #4d6369;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+
+.sub-add-data {
+    position: relative;
+}
+
+.sub-add-data input {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 800;
+    background-color: #dad9d9;
+    width: 70%;
+    border: 1px solid #4d6369;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 15px;
+    outline: none;
+}
+
+#add-employer {
+    background-color: #02bbec;
+    font-size: 17px;
+    height: 50px;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: none;
+    margin: 20px 0;
+    padding: 0 40px;
+    cursor: pointer;
+    transition: 0.5s;
+    outline: none;
+}
+
+#add-employer:disabled {
+    opacity: 0.3;
+    cursor: unset;
+}
+
+#add-employer:hover:enabled {
+    background-color: #05a2ca;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.error {
+    font-size: 15px;
+    color: #9c4848;
+    position: absolute;
+    bottom: 3px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        height: calc(100vh - 62px);
+        margin: 30px;
+    }
+
+    #add-employer, .sub-add-data input {
+        width: 100%;
+    }
+
+    .create-title {
+        font-size: 20px;
+    }
+
+    .error {
+        font-size: 12px;
+    }
+}
